@@ -10,4 +10,4 @@ import pandas as pd
 ### GroupBy操作
 df = pd.DataFrame({"Key":['A','B',"C",'A','B',"C",'A','B',"C"],
                    "data":[1,2,3,6,2,3,4,2,2]})
-print(df.groupby)
+print(df.groupby("Key").sum())
